@@ -7,7 +7,7 @@ function obliczBialko() {
         alert("Podaj prawidłową masę ciała!");
         return;
     }
-
+// ale mi sie nie chce w tym javasciprite siedziec naprawde, ten jezyk to takie gówno tutaj nic nie działa tak jak chce, juz rozpierdala mnie ten jezyk naprawde
     // Oblicz zapotrzebowanie na białko (masa ciała * cel * aktywność fizyczna)
     let zapotrzebowanie = masa * cel * aktywnosc;
     document.getElementById("wynik").innerHTML = 
