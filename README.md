@@ -1,1 +1,1 @@
-siema kurewki, lubie progress, dużą łapę i maxy na ławie, wiec robie ta stronek i essa z wami kurwy
+Lubie progress, dużą łape i maxy na ławie, więc dlatego robie te storne
