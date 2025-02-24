@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../multimedia/obrazy/logo.png" type="image/x-icon">
+    <title>Kalkulator Zapotrzebowania Kalorycznego</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../skrypty/kalkulatorkalori.js" defer></script> <!-- Skrypt kalkulatora kalorii -->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="clock-container">
+                <form name="clock" onSubmit="0">
+                    <input type="text" name="face" size="24">
+                </form>
+            </div>
+            <h1>Kalkulator zapotrzebowania kalorycznego</h1>
+        </div>
+        <script src="../skrypty/zegar.js"></script>
+    </header>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="treningmenu.html">Trening</a></li>
+                <li><a href="regeneracjaisen.html">Sen i Regeneracja</a></li>
+                <li><a href="motywacjaadyscyplina.html">Motywacja i Dyscyplina</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="kalkulator">
+            <h2>Oblicz swoje dzienne zapotrzebowanie kaloryczne</h2>
+            
+            <label for="waga">Podaj swoją wagę (kg):</label>
+            <input type="number" id="waga" placeholder="Wpisz wagę" required>
+
+            <label for="wzrost">Podaj swój wzrost (cm):</label>
+            <input type="number" id="wzrost" placeholder="Wpisz wzrost w cm" required>
+
+            <label for="wiek">Podaj swój wiek:</label>
+            <input type="number" id="wiek" placeholder="Wpisz wiek" required>
+
+            <label for="plec">Wybierz swoją płeć:</label>
+            <select id="plec">
+                <option value="male">Mężczyzna</option>
+                <option value="female">Kobieta</option>
+            </select>
+
+            <label for="aktywnosc">Wybierz poziom aktywności fizycznej:</label>
+            <select id="aktywnosc">
+                <option value="1.2">Brak aktywności</option>
+                <option value="1.375">Lekka aktywność (np. spacery)</option>
+                <option value="1.55">Umiarkowana aktywność (np. ćwiczenia 3-4 razy w tygodniu)</option>
+                <option value="1.75">Intensywna aktywność (np. codzienne treningi)</option>
+                <option value="1.9">Bardzo intensywna aktywność (np. sportowcy)</option>
+            </select>
+
+            <button onclick="obliczKalorie()">Oblicz</button>
+
+            <p id="wynik"></p>
+
+            <!-- Link do strony głównej -->
+            <a href="dieta.html#kalorie" class="wroc-link">Wróć do strony głównej</a>
+        </section>
+    </main>
+
+</body>
+</html>

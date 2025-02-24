@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/multimedia/obrazy/logo.png" type="image/x-icon">
+    <title>Kalkulator Białka</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../skrypty/kalkulatorbialka.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kalkulator zapotrzebowania na białko</h1>
+    </header>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="treningmenu.html">Trening</a></li>
+                <li><a href="regeneracjaisen.html">Sen i Regeneracja</a></li>
+                <li><a href="motywacjaadyscyplina.html">Motywacja i Dyscyplina</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="kalkulator">
+            <h2>Oblicz swoje dzienne zapotrzebowanie na białko</h2>
+            
+            <label for="masa">Podaj swoją masę ciała (kg):</label>
+            <input type="number" id="masa" placeholder="Wpisz masę ciała" required>
+
+            <label for="cel">Wybierz swój cel:</label>
+            <select id="cel">
+                <option value="1.6">Redukcja</option>
+                <option value="1.8">Utrzymanie masy</option>
+                <option value="2.2">Budowanie masy</option>
+            </select>
+
+            <label for="aktywnosc">Wybierz poziom aktywności fizycznej:</label>
+            <select id="aktywnosc">
+                <option value="1.2">Brak aktywności</option>
+                <option value="1.375">Lekka aktywność (np. spacery)</option>
+                <option value="1.55">Umiarkowana aktywność (np. ćwiczenia 3-4 razy w tygodniu)</option>
+                <option value="1.75">Intensywna aktywność (np. codzienne treningi)</option>
+                <option value="1.9">Bardzo intensywna aktywność (np. sportowcy)</option>
+            </select>
+
+            <button onclick="obliczBialko()">Oblicz</button>
+
+            <p id="wynik"></p>
+
+            <!-- Link do strony głównej -->
+            <a href="dieta.html#bialko" class="wroc-link">Wróć do strony głównej</a>
+        </section>
+    </main>
+
+</body>
+</html>
