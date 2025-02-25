@@ -10,7 +10,19 @@
 </head>
 <body>
     <header>
-        <h1>Kalkulator zapotrzebowania na białko</h1>
+        <div class="header-content">
+            <div class="clock-container">
+                <form name="clock" onSubmit="0">
+                    <input type="text" name="face" size="24">
+                </form>
+            </div>
+            <h1>Kalkulator zapotrzebowania na białko</h1>
+            <div class="date-container">
+                <p id="current-date"></p>
+            </div>
+        </div>
+        <script src="../skrypty/zegar.js"></script>
+        <script src="../skrypty/data.js"></script>
     </header>
 
     <div class="navigation">
