@@ -134,7 +134,7 @@ ul li:hover {
 
 ul li a {
     display: block;
-    color: #3498db;
+    color: #000000;
     font-weight: bold;
     text-decoration: none;
     padding: 5px;
@@ -142,8 +142,8 @@ ul li a {
 }
 
 ul li a:hover {
-    background: #3498db;
-    color: white;
+    background: #3498db20;
+    color: #358fcbc2;
     border-radius: 5px;
 }
 
