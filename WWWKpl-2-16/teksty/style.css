@@ -1,0 +1,601 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nagłówek */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Nawigacja główna */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Nawigacja sekcji */
+.navigation {
+    background-color: #ecf0f1;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navigation nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation nav ul li {
+    margin: 0 15px;
+}
+
+.navigation nav ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation nav ul li a:hover {
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Główna zawartość */
+main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Sekcje */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 5px;
+}
+
+/* Nagłówki */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+/* Lista w spisie treści */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+}
+
+ul li a {
+    display: block;
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+/* Zegar w nagłówku */
+/* Zegar w nagłówku */
+.header-content {
+    display: flex;
+    justify-content: center; /* Tytuł na środku */
+    align-items: center;
+    width: 100%;
+}
+
+.clock-container {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem; /* Zmniejszamy rozmiar zegara */
+    display: flex;
+    justify-content: left; /* Wyrównanie zawartości do lewej */
+    align-items: center;
+    width: 272px;
+    position: absolute; /* Ustawiamy zegar na stałe po lewej stronie */
+    left: 20px; /* Odstęp od lewej krawędzi */
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem; /* Zmniejszamy rozmiar czcionki w zegarze */
+    text-align: left; /* Zmieniamy wyrównanie tekstu na lewą stronę */
+    width: auto;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: none;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+/* Wyśrodkowanie tytułu */
+h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Można dostosować rozmiar tytułu */
+    margin: 0;
+    flex-grow: 1; /* Sprawia, że tytuł pozostaje wyśrodkowany */
+}
+
+
+/* Wyśrodkowanie tytułu */
+h1 {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 2.5rem; /* Można dostosować rozmiar tytułu */
+    margin: 0;
+}
+
+/* Sekcja diety */
+.skladnik {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skladnik-info {
+    width: 55%;
+}
+
+.skladnik-img {
+    width: 40%;
+}
+
+.skladnik-img img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylizacja tabeli */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #2c3e50;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+/* Link do kalkulatora */
+.oblicz-link {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.oblicz-link:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Stylizacja formularzy kalkulatora */
+.kalkulator {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.kalkulator h2 {
+    text-align: center;
+}
+
+.kalkulator label {
+    display: block;
+    margin-top: 10px;
+}
+
+.kalkulator input, .kalkulator select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.kalkulator button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.kalkulator button:hover {
+    background: #2980b9;
+}
+
+#wynik {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Link powrotu */
+.wroc-link {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.wroc-link:hover {
+    background-color: #2980b9;
+}
+.wroc-gora {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    margin: 20px auto 0;  /* Ustawiamy auto w poziomie, aby wyśrodkować */
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    text-transform: uppercase; /* Dodaje efekt pogrubienia tekstu */
+}
+
+
+.wroc-gora:hover {
+    background-color: #2980b9;
+}
+.exercise-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    border-color: #333;
+}
+
+.exercise-video {
+    width: 48%; /* Filmik zajmuje prawie połowę szerokości */
+    max-height: 400px; /* Ograniczamy maksymalną wysokość filmiku */
+}
+
+.exercise-description {
+    width: 48%; /* Opis zajmuje drugą połowę */
+}
+
+/* Nagłówek sekcji ćwiczeń */
+.exercise-container h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.exercise-container ul {
+    margin-left: 20px;
+}
+
+.exercise-container ul li {
+    background: #fff;
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-container ul li:hover {
+    background-color: #f4f4f4;
+}
+
+
+@media screen and (max-width: 768px) {
+    .exercise-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exercise-video, .exercise-description {
+        width: 100%; 
+    }
+}
+/* Sekcja Trening Menu */
+.training-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.menu-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Responsywność */
+@media (max-width: 1200px) {
+    .menu-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-row {
+        flex-direction: column;
+    }
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+/* Styl sekcji */
+.section-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Nagłówki sekcji */
+.section-container h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Kontener tekstu */
+.content-container {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Kontener obrazków */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.training-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.menu-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
