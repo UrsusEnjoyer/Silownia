@@ -373,7 +373,6 @@ table tbody tr:nth-child(even) {
 
 .exercise-video {
     width: 48%; /* Filmik zajmuje prawie połowę szerokości */
-    max-height: 400px; /* Ograniczamy maksymalną wysokość filmiku */
 }
 
 .exercise-description {
