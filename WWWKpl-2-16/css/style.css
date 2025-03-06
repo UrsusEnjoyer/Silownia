@@ -424,30 +424,17 @@ table tbody tr:nth-child(even) {
     background-color: #f4f4f4;
 }
 
-
-@media screen and (max-width: 768px) {
-    .exercise-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .exercise-video, .exercise-description {
-        width: 100%; 
-    }
-}
 /* Sekcja Trening Menu */
 .training-menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center; /* Centrowanie ostatniego elementu */
 }
 
 .menu-row {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrowanie wszystkich elementów */
 }
 
 .menu-item {
@@ -465,6 +452,17 @@ table tbody tr:nth-child(even) {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+.last-item {
+    width: 30%;
+    margin: 10px auto; /* Centrowanie elementu */
+    float: none; /* Zapobiega wyrównywaniu do lewej */
+    margin-left: -59px; /* Przesuwa w prawo */
+
+    clear: both; /* Upewnia się, że element nie jest obok innych */
+}
+
+
 
 .menu-item h2 {
     font-size: 1.8rem;
@@ -485,22 +483,7 @@ table tbody tr:nth-child(even) {
     line-height: 1.6;
 }
 
-/* Responsywność */
-@media (max-width: 1200px) {
-    .menu-item {
-        width: 45%;
-    }
-}
 
-@media (max-width: 768px) {
-    .menu-item {
-        width: 100%;
-    }
-
-    .menu-row {
-        flex-direction: column;
-    }
-}
 .btn {
     display: inline-block;
     padding: 10px 20px;

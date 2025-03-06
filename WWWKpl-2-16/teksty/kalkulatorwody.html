@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/multimedia/obrazy/logo.png" type="image/x-icon">
+    <title>Kalkulator Wody</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../skrypty/kalkulatorwody.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="clock-container">
+                <form name="clock" onSubmit="0">
+                    <input type="text" name="face" size="24">
+                </form>
+            </div>
+            <h1>Kalkulator zapotrzebowania na wodę</h1>
+            <div class="date-container">
+                <p id="current-date"></p>
+            </div>
+        </div>
+        <script src="../skrypty/zegar.js"></script>
+        <script src="../skrypty/data.js"></script>
+    </header>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="treningmenu.html">Trening</a></li>
+                <li><a href="regeneracjaisen.html">Sen i Regeneracja</a></li>
+                <li><a href="motywacjaadyscyplina.html">Motywacja i Dyscyplina</a></li>
+                <li><a href ="kalkulatory.html">Kalkulatory</a></li>
+                <li><a href ="skorowidz.html">Skorowidz</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="kalkulator">
+            <h2>Oblicz swoje dzienne zapotrzebowanie na wodę</h2>
+            
+            <label for="masa">Podaj swoją masę ciała (kg):</label>
+            <input type="number" id="masa" placeholder="Wpisz masę ciała" required>
+
+            <label for="aktywnosc">Wybierz poziom aktywności fizycznej:</label>
+            <select id="aktywnosc">
+                <option value="35">Niska aktywność (np. praca biurowa)</option>
+                <option value="40">Średnia aktywność (np. lekkie ćwiczenia 3-4 razy w tygodniu)</option>
+                <option value="45">Wysoka aktywność (np. codzienne treningi)</option>
+                <option value="50">Bardzo intensywna aktywność (np. sportowcy)</option>
+            </select>
+
+            <button onclick="obliczWode()">Oblicz</button>
+
+            <p id="wynik"></p>
+
+            <a href="dieta.html#woda" class="wroc-link">Wróć do strony głównej</a>
+            <a href="skorowidz.html" class="wroc-link">Wróć do skorowidzu</a>
+        </section>
+    </main>
+</body>
+</html>
