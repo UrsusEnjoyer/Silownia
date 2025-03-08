@@ -20,6 +20,14 @@
                 <p id="current-date"></p>
             </div>
         </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Szukaj..." onkeyup="showSuggestions(event)" onkeypress="handleKeyPress(event)">
+            <button onclick="searchSite()">
+                <img src="../multimedia/obrazy/lupa.png" alt="Szukaj">
+            </button>
+            <ul id="suggestions-list"></ul>
+        </div>
+        <script src="../skrypty/wyszukiwarka.js"></script>
         <script src="../skrypty/zegar.js"></script>
         <script src="../skrypty/data.js"></script>
     </header>

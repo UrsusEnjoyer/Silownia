@@ -19,6 +19,14 @@
                 <p id="current-date"></p>
             </div>
         </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Szukaj..." onkeyup="showSuggestions(event)" onkeypress="handleKeyPress(event)">
+            <button onclick="searchSite()">
+                <img src="../multimedia/obrazy/lupa.png" alt="Szukaj">
+            </button>
+            <ul id="suggestions-list"></ul>
+        </div>
+        <script src="../skrypty/wyszukiwarka.js"></script>
         <script src="../skrypty/zegar.js"></script>
         <script src="../skrypty/data.js"></script>
     </header>
@@ -128,6 +136,28 @@
             <div class="skladnik-img">
                 <img src="../multimedia/obrazy/utrzymanie_dyscypliny.png" alt="Ważne nawyki w utrzymaniu dyscypliny">
             </div>
+        </section>
+        <section id="cytaty-motywacyjne" class="skladnik">
+            <div class="skladnik-info">
+                <a name = "cytaty"><h2>Moc cytatów motywacyjnych</h2></a>
+                <p>Cytaty motywacyjne to nie tylko inspirujące słowa, ale potężne narzędzie pomagające w utrzymaniu motywacji i dyscypliny. Często w trudnych momentach to właśnie one przypominają nam, dlaczego warto się starać i kontynuować swoją drogę. Mogą działać jak codzienne przypomnienie o naszych celach oraz jako wsparcie w chwilach zwątpienia.</p>
+                <h3>Dlaczego warto czytać cytaty motywacyjne?</h3>
+                <a href="cytaty.html" class = "oblicz-link"><h3>Przejdź do losowych cytatów</h3></a>
+                <ul>
+                    <li>Dodają energii i pozytywnego nastawienia</li>
+                    <li>Pomagają przełamywać bariery mentalne</li>
+                    <li>Przypominają, że sukces wymaga czasu i wytrwałości</li>
+                    <li>Inspirują do działania i wychodzenia poza strefę komfortu</li>
+                    <li>Uczą, że porażki są częścią drogi do sukcesu</li>
+                </ul>
+                
+            </div>
+                
+                
+            <div class="skladnik-img">
+                <img src="../multimedia/obrazy/cytaty.png" alt="Cytaty motywacyjne">
+            </div>
+            
         </section>
 
         <section id="podsumowanie">

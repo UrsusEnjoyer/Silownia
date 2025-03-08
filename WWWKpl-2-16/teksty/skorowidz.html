@@ -20,6 +20,14 @@
                 <p id="current-date"></p>
             </div>
         </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Szukaj..." onkeyup="showSuggestions(event)" onkeypress="handleKeyPress(event)">
+            <button onclick="searchSite()">
+                <img src="../multimedia/obrazy/lupa.png" alt="Szukaj">
+            </button>
+            <ul id="suggestions-list"></ul>
+        </div>
+        <script src="../skrypty/wyszukiwarka.js"></script>
         <script src="../skrypty/zegar.js"></script>
         <script src="../skrypty/data.js"></script>
     </header>
@@ -77,6 +85,7 @@
                     <a href = "motywacjaadyscyplina.html#utrzymanie"><li>Jak utrzymać motywacje?</li></a>
                     <a href = "motywacjaadyscyplina.html#niecialo"><li>Siłownia nie tylko jako kwestia ciała, ale i umysłu</li></a>
                     <a href = "motywacjaadyscyplina.html#nawyki"><li>Ważne nawyki w utrzymaniu dyscypliny</li></a>
+                    <a href = "motywacjaadyscyplina.html#cytaty"><li>Cytaty Motywacyjne</li></a>
                 </ul>
             </li>
             <a name = "kal"><li><h2>Kalkulatory</h2></a>
